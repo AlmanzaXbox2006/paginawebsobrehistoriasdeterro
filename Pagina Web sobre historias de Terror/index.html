@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias de Terror</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Historias de Terror</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#agregar">Agregar Historia</a></li>
+          <li><a href="#buscar">Buscar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section id="inicio">
+      <div class="container">
+        <h2>Bienvenido a Historias de Terror</h2>
+        <p>Explora historias escalofriantes y leyendas urbanas.</p>
+      </div>
+    </section>
+    
+    <section id="agregar">
+      <div class="container">
+        <h2>Agregar Nueva Historia</h2>
+        <form id="formAgregar">
+          <label for="titulo">Título:</label><br>
+          <input type="text" id="titulo" name="titulo" required><br>
+          <label for="contenido">Contenido:</label><br>
+          <textarea id="contenido" name="contenido" rows="4" required></textarea><br>
+          <button type="submit">Agregar</button>
+        </form>
+      </div>
+    </section>
+    
+    <section id="buscar">
+      <div class="container">
+        <h2>Buscar Historia</h2>
+        <input type="text" id="buscarInput" placeholder="Buscar por título...">
+        <button onclick="buscarHistoria()">Buscar</button>
+        <div id="resultadoBusqueda">
+          <!-- Aquí se mostrarán los resultados de la búsqueda -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Historias de Terror. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
